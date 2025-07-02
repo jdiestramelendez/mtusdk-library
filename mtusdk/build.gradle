@@ -1,0 +1,16 @@
+apply plugin: 'maven-publish'
+
+configurations.maybeCreate("default")
+artifacts.add("default", file('mtusdk.aar'))
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'com.github.jdiestramelendez'
+            artifactId = 'mtusdk'
+            version = '1.0.0'
+            
+            artifact('mtusdk.aar')
+        }
+    }
+}

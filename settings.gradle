@@ -1,0 +1,2 @@
+rootProject.name = 'mtusdk-library'
+include ':mtusdk'
