@@ -15,6 +15,14 @@ allprojects {
     }
 }
 
+// Define assemble task for JitPack compatibility
+task assemble {
+    dependsOn ':mtusdk:publishToMavenLocal'
+    doLast {
+        println "Assemble task completed"
+    }
+}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }

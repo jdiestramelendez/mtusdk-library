@@ -6,11 +6,32 @@ artifacts.add("default", file('mtusdk.aar'))
 publishing {
     publications {
         maven(MavenPublication) {
-            groupId = 'com.github.jdiestramelendez'
+            groupId = project.hasProperty('group') ? project.group : 'com.github.jdiestramelendez'
             artifactId = 'mtusdk'
-            version = '1.0.0'
+            version = project.hasProperty('version') ? project.version : '1.0.0'
             
             artifact('mtusdk.aar')
+            
+            // Add POM information
+            pom {
+                name = 'MTUSDK'
+                description = 'MTU SDK Library'
+                url = 'https://github.com/jdiestramelendez/mtusdk-library'
+                
+                licenses {
+                    license {
+                        name = 'The Apache License, Version 2.0'
+                        url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                
+                developers {
+                    developer {
+                        id = 'jdiestramelendez'
+                        name = 'Jose Diestra'
+                    }
+                }
+            }
         }
     }
 }

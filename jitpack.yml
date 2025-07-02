@@ -1,0 +1,11 @@
+jdk:
+  - openjdk8
+
+before_install:
+  - echo "Setting up build environment"
+
+install:
+  - echo "Installing dependencies"
+
+script:
+  - ./gradlew clean assemble publishToMavenLocal 
