@@ -8,4 +8,4 @@ install:
   - echo "Installing dependencies"
 
 script:
-  - ./gradlew clean assemble publishToMavenLocal 
+  - ./gradlew clean assemble 

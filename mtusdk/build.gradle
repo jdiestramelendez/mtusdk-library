@@ -6,9 +6,9 @@ artifacts.add("default", file('mtusdk.aar'))
 publishing {
     publications {
         maven(MavenPublication) {
-            groupId = project.hasProperty('group') ? project.group : 'com.github.jdiestramelendez'
+            groupId = 'com.github.jdiestramelendez'
             artifactId = 'mtusdk'
-            version = project.hasProperty('version') ? project.version : '1.0.0'
+            version = project.version
             
             artifact('mtusdk.aar')
             

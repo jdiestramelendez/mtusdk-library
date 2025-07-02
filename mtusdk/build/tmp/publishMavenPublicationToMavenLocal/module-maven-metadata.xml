@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-  <groupId>mtusdk-library</groupId>
+  <groupId>com.github.jdiestramelendez</groupId>
   <artifactId>mtusdk</artifactId>
   <versioning>
     <latest>unspecified</latest>
@@ -8,6 +8,6 @@
     <versions>
       <version>unspecified</version>
     </versions>
-    <lastUpdated>20250702042741</lastUpdated>
+    <lastUpdated>20250702043415</lastUpdated>
   </versioning>
 </metadata>

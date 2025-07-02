@@ -8,6 +8,9 @@ buildscript {
     }
 }
 
+// Set project version for JitPack
+version = '1.0.2'
+
 allprojects {
     repositories {
         google()
