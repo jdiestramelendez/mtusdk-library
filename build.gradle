@@ -9,9 +9,10 @@ buildscript {
 }
 
 // Set project version for JitPack
-version = '1.0.2'
+version = '1.0.3'
 
 allprojects {
+    version = rootProject.version
     repositories {
         google()
         mavenCentral()
