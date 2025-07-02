@@ -8,4 +8,5 @@ install:
   - echo "Installing dependencies"
 
 script:
-  - ./gradlew clean assemble 
+  - ./gradlew clean
+  - ./gradlew :mtusdk:publishToMavenLocal 
