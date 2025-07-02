@@ -9,7 +9,7 @@ buildscript {
 }
 
 // Set project version for JitPack
-version = '1.0.4'
+version = '1.0.5'
 
 allprojects {
     version = rootProject.version

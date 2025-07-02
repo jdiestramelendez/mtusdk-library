@@ -9,4 +9,5 @@ install:
 
 script:
   - ./gradlew clean
-  - ./gradlew :mtusdk:publishToMavenLocal 
+  - ./gradlew :mtusdk:publishToMavenLocal
+  - find $HOME/.m2/repository -name "*mtusdk*" -type f 

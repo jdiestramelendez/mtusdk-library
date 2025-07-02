@@ -4,6 +4,10 @@ configurations.maybeCreate("default")
 artifacts.add("default", file('mtusdk.aar'))
 
 publishing {
+    repositories {
+        mavenLocal()
+    }
+    
     publications {
         maven(MavenPublication) {
             groupId = 'com.github.jdiestramelendez'
